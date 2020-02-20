@@ -1,0 +1,89 @@
+*{
+	padding: 0;
+	margin: 0;
+	color: #000000;
+}
+
+html, body{
+	background-color: #ffffff;
+}
+
+nav{
+	border: 2px solid rgb(35, 94, 161);
+	margin: 2rem;
+	border-radius: 10px;
+	padding: 1rem;
+	background-image: url(fondo_principal.jpg);
+	background-repeat: no-repeat;
+	background-size: 1500px;
+	background-position: -7rem -1rem;
+	height: 1050px;
+	width: 1330px;
+	text-align: center;
+}
+
+section{
+	border: 2px solid rgb(35, 94, 161);
+	margin: 1rem;
+	border-radius: 10px;
+	padding: 1rem;
+	text-align: left;
+}
+
+.Redonda{
+	border: solid;
+	border-radius: 50%
+}
+
+@keyframes animacion_parpadeante{
+	from{
+		background-color: #ffffff;
+	}
+	to{
+		background-color: #f51200;
+	}
+} 
+
+@keyframes animacion_shuriken_uno{
+	from{
+		transform: rotate(0deg);
+		margin-left: -80vw;
+	}
+	to{
+		transform: rotate(360deg);
+		margin-left: 80vw;
+	}
+}
+
+@keyframes animacion_shuriken_dos{
+	from{
+		transform: rotate(360deg);
+		margin-left: 80vw;
+	}
+	to{
+		transform: rotate(0deg);
+		margin-left: -80vw;
+	}
+}
+
+.SIN_EXPERIENCIA{
+	width: 85%
+	background-color: #06D6A0;
+	color: white;
+	height: 100px;
+	animation: animacion_parpadeante 1.5s alternate infinite;
+}
+
+.shuriken_uno{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: animacion_shuriken_uno 1s alternate infinite;
+}
+
+.shuriken_dos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: animacion_shuriken_dos 1s alternate infinite;
+}
